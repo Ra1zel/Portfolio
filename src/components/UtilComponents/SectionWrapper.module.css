@@ -1,0 +1,11 @@
+.sectionWrapper {
+  margin-top: 150px;
+  margin-bottom: 300px;
+}
+
+.sectionHeading {
+  font-family: "MyriadPro-Light";
+  font-size: 280%;
+  border-bottom: 2px solid #00adb5;
+  margin-bottom: 50px;
+}

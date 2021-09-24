@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.logo {
+  width: 100px;
+  height: auto;
+  margin: 0 20px;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.logo:hover {
+  transform: scale(1.5);
+}
+.heading {
+  margin-top: 35px;
+  font-family: "MyriadPro-Light";
+  font-size: 120%;
+  border-bottom: 2px solid teal;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.otherContainer {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: none;
+}

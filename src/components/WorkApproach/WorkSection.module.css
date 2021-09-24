@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.arrowSym {
+  width: 100px;
+  height: 50px;
+  transform: translateY(-81%);
+}
+.temp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

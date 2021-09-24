@@ -1,0 +1,21 @@
+.navbarMain {
+  width: 100%;
+  height: 45px;
+  background-color: #3a4750;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "MyriadPro-Regular";
+  font-size: 115%;
+  margin-inline: 25px;
+  color: rgb(255 255 255 / 62%);
+  transition: color 0.3s ease-in-out;
+}
+.item:hover {
+  color: white;
+}

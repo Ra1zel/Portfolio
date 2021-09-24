@@ -1,0 +1,13 @@
+.stepText {
+  padding-top: 15px;
+  font-family: "MyriadPro-Regular";
+  font-size: 120%;
+}
+.stepTextContainer {
+  width: 300px;
+  margin-left: 5px;
+}
+.img {
+  width: 300px;
+  height: 300px;
+}

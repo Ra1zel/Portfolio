@@ -1,0 +1,17 @@
+.otherContainer {
+  border-radius: 75px;
+  font-family: "MyriadPro-Regular";
+  font-size: 110%;
+  background-color: #3a4750;
+  color: #eee;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 5px 5px;
+  max-height: 40px;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.otherContainer:hover {
+  transform: scale(1.1);
+  background-color: #4c5a64;
+  cursor: default;
+}
