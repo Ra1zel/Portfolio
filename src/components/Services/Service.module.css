@@ -4,9 +4,8 @@
   background-color: #3a4750;
   padding: 15px;
   border-radius: 15px;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  margin-inline: 20px;
+  margin: 10px 20px;
+  display: inline-block;
 }
 .label {
   position: relative;
@@ -29,12 +28,17 @@
   position: absolute;
   right: -62px;
   top: 0;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .content {
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   overflow: hidden;
+  flex-basis: content;
 }
 
 .img:hover {
   cursor: pointer;
+}
+.p {
+  max-width: 200px;
 }
