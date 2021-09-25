@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRef, useState } from "react";
 import styles from "./Service.module.css";
 const Service: React.FC<{
@@ -7,6 +7,7 @@ const Service: React.FC<{
   imgURL: string;
 }> = (props, ref) => {
   const [toggle, setToggle] = useState(false);
+  const [serviceHeight, setserviceHeight] = useState("auto");
   const content = useRef<HTMLDivElement>(null);
   const head = useRef<HTMLDivElement>(null);
   const expandToggler = () => {
@@ -14,6 +15,13 @@ const Service: React.FC<{
       return !prevState;
     });
   };
+  useEffect(() => {
+    console.log("this was hit1111");
+    setserviceHeight((prevState) => {
+      return (head.current!.clientWidth + 50).toString();
+    });
+  }, []);
+  console.log(serviceHeight);
   return (
     <div className={styles.service}>
       <div ref={head} className={`${styles.label}`}>
@@ -37,7 +45,7 @@ const Service: React.FC<{
       >
         <p
           style={{
-            width: head.current ? head.current!.clientWidth + 45 : "auto",
+            width: `${serviceHeight}px`,
           }}
         >
           {props.content}
