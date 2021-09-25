@@ -1,0 +1,16 @@
+.control {
+  margin-inline: 10px;
+  transition: all 0.35s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 50%;
+  transform: translateX(26px);
+}
+.control:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 10px #3a4750;
+  background-color: #3a4750;
+}
+.link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}

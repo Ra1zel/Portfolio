@@ -9,13 +9,13 @@ import styles from "./WorkSection.module.css";
 const WorkSection = () => {
   const heading = "My Approach to solve your problems";
   const copy =
-    "Detailed communication with the client to understand the business problem at hand.";
+    "Detailed communication with you to understand the business problem at hand.";
   const copy2 =
-    "Come up with a well engineered solution and share my ideas with the client.";
+    "Come up with a well engineered solution and share my ideas with you.";
   const copy3 =
-    "I start development and communicate my progress to you at every checkpoint.";
+    "Start development and communicate my progress to you at every checkpoint.";
   const copy4 =
-    "I deliver the product. If you are unsatisfied I start all over again and this continues until you are 100% satisfied.";
+    "Deliver the product. If you are unsatisfied we start all over again and we keep at it until you are 100% satisfied.";
 
   const stepArray = [
     [img, copy],

@@ -1,0 +1,34 @@
+.heading {
+  text-align: center;
+  font-family: "MyriadPro-Light";
+  font-size: 250%;
+  margin: 35px 0px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  font-family: "MyriadPro-Regular";
+  font-size: 150%;
+  width: 500px;
+  transform: translateX(15%);
+}
+.linkContainer {
+  margin-top: 15px;
+  display: flex;
+  transform: translateX(-78px);
+  justify-content: space-around;
+  align-items: center;
+}
+.link {
+  font-family: "MyriadPro-Regular";
+  font-size: 150%;
+  display: inline-block;
+  margin-inline: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline;
+}

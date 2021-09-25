@@ -17,5 +17,5 @@
   transition: color 0.3s ease-in-out;
 }
 .item:hover {
-  color: white;
+  color: #494d50;
 }
