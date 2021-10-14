@@ -1,5 +1,5 @@
 import AboutText from "../components/AboutText/AboutText";
-import { motion } from "framer-motion";
+
 import Introduction from "../components/Introduction/Introduction";
 import Image from "../components/Image/Image";
 import styles from "./About.module.css";

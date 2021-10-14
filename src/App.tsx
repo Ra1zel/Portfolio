@@ -1,14 +1,13 @@
 import "./App.css";
 import About from "./pages/About";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Work from "./pages/Work";
 function App() {
   const pages = [
     {
-      path: "/About",
+      path: "/",
       Component: <About />,
     },
-    { path: "/", Component: <About /> },
     {
       path: "/Work",
       Component: <Work />,
@@ -16,13 +15,18 @@ function App() {
   ];
   return (
     <div>
-      {pages.map((page, index) => {
-        return (
-          <Route key={index} path={page.path}>
-            {page.Component}
-          </Route>
-        );
-      })}
+      <Switch>
+        {pages.map((page, index) => {
+          return (
+            <Route key={index} path={page.path} exact>
+              {page.Component}
+            </Route>
+          );
+        })}
+        <Route path="*">
+          <About />
+        </Route>
+      </Switch>
     </div>
   );
 }

@@ -32,3 +32,19 @@
   cursor: pointer;
   text-decoration: underline;
 }
+@media (max-width: 650px) {
+  .content {
+    font-size: 120%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(0);
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .link {
+    font-size: 120%;
+  }
+}

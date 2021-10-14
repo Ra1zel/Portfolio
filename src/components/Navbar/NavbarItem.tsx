@@ -1,10 +1,21 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./NavbarItem.module.css";
 const NavbarItem: React.FC<{ text: string }> = (props) => {
+  let linkText;
+  if (props.text === "Home") {
+    linkText = "/";
+  } else {
+    linkText = props.text;
+  }
   return (
-    <Link to={`${props.text}`} className={styles.link}>
+    <NavLink
+      activeClassName={styles.active}
+      exact={true}
+      to={`${linkText}`}
+      className={styles.link}
+    >
       {props.text}
-    </Link>
+    </NavLink>
   );
 };
 export default NavbarItem;

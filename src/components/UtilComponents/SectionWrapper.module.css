@@ -9,3 +9,10 @@
   border-bottom: 2px solid #00adb5;
   margin-bottom: 50px;
 }
+
+@media (max-width: 500px) {
+  .sectionHeading {
+    text-align: center;
+    font-size: 200%;
+  }
+}

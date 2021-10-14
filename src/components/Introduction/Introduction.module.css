@@ -1,6 +1,13 @@
-.containerDiv{
-    transform: translateY(25%);
-    font-family: 'MyriadPro-Light';
-    font-size: 200%;
-    margin-left: 200px;
+.containerDiv {
+  transform: translateY(25%);
+  font-family: "MyriadPro-Light";
+  font-size: 200%;
+  margin-left: 200px;
+}
+
+@media (max-width: 600px) {
+  .containerDiv {
+    margin-inline: auto;
+    text-align: center;
+  }
 }

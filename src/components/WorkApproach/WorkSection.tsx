@@ -7,6 +7,7 @@ import Step from "./Step";
 import styles from "./WorkSection.module.css";
 
 const WorkSection = () => {
+  const widthW = window.innerWidth;
   const heading = "My Approach to solve your problems";
   const copy =
     "Detailed communication with you to understand the business problem at hand.";
@@ -30,23 +31,25 @@ const WorkSection = () => {
           return (
             <div className={styles.temp} key={index}>
               <Step stepInfo={{ img: item[0], copy: item[1] }} />
-              {index !== stepArray.length - 1 ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  className={styles.arrowSym}
-                >
-                  <title>Arrow Forward</title>
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="48"
-                    d="M268 112l144 144-144 144M392 256H100"
-                  />
-                </svg>
-              ) : null}
+              {index !== stepArray.length - 1
+                ? widthW > 400 && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      className={styles.arrowSym}
+                    >
+                      <title>Arrow Forward</title>
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="48"
+                        d="M268 112l144 144-144 144M392 256H100"
+                      />
+                    </svg>
+                  )
+                : null}
             </div>
           );
         })}

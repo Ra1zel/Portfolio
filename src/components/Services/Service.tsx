@@ -24,17 +24,17 @@ const Service: React.FC<{
   console.log(serviceHeight);
   return (
     <div className={styles.service}>
+      <img
+        src={props.imgURL}
+        alt="down symbol"
+        className={styles.img}
+        onClick={expandToggler}
+        style={{
+          transform: toggle ? "rotate(180deg)" : "",
+        }}
+      ></img>
       <div ref={head} className={`${styles.label}`}>
         {props.label}
-        <img
-          src={props.imgURL}
-          alt="down symbol"
-          className={styles.img}
-          onClick={expandToggler}
-          style={{
-            transform: toggle ? "rotate(180deg)" : "",
-          }}
-        ></img>
       </div>
       <div
         ref={content}

@@ -6,6 +6,7 @@
   border-radius: 15px;
   margin: 10px 20px;
   display: inline-block;
+  position: relative;
 }
 .label {
   position: relative;
@@ -26,8 +27,8 @@
   width: 30px;
   height: auto;
   position: absolute;
-  right: -62px;
-  top: 0;
+  right: 5px;
+  top: auto;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .content {
@@ -41,4 +42,19 @@
 }
 .p {
   max-width: 200px;
+}
+@media (max-width: 500px) {
+  .service {
+    width: 100%;
+  }
+  .img {
+    right: 5px;
+    top: auto;
+  }
+}
+@media (max-width: 850px) {
+  .img {
+    right: 5px;
+    top: auto;
+  }
 }
